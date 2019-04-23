@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>我的第一篇博客文章 | KEEP LEARNING</title>
+  <title>Python学习笔记 | KEEP LEARNING</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章内容  第二章内容  总结内容">
+  <meta name="description" content="第一章 基本功1、raw字符串   如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。   为了避免这种情况，我们可以在字符串前面加个前缀 r ，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：r’\ (~~)/ \ (~~)/‘ 2、多行字符串   如果要表示多行字符串，可以用’’’…’’’表示：‘’’Line 1Line 2Line 3’’’   与’Line">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
-<meta property="og:url" content="http://yoursite.com/2019/04/21/我的第一篇博客文章/index.html">
+<meta property="og:title" content="Python学习笔记">
+<meta property="og:url" content="http://yoursite.com/2019/04/23/Python学习笔记/index.html">
 <meta property="og:site_name" content="KEEP LEARNING">
-<meta property="og:description" content="第一章内容  第二章内容  总结内容">
+<meta property="og:description" content="第一章 基本功1、raw字符串   如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。   为了避免这种情况，我们可以在字符串前面加个前缀 r ，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：r’\ (~~)/ \ (~~)/‘ 2、多行字符串   如果要表示多行字符串，可以用’’’…’’’表示：‘’’Line 1Line 2Line 3’’’   与’Line">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2019-04-21T04:39:29.983Z">
+<meta property="og:updated_time" content="2019-04-23T13:44:45.365Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一篇博客文章">
-<meta name="twitter:description" content="第一章内容  第二章内容  总结内容">
+<meta name="twitter:title" content="Python学习笔记">
+<meta name="twitter:description" content="第一章 基本功1、raw字符串   如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。   为了避免这种情况，我们可以在字符串前面加个前缀 r ，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：r’\ (~~)/ \ (~~)/‘ 2、多行字符串   如果要表示多行字符串，可以用’’’…’’’表示：‘’’Line 1Line 2Line 3’’’   与’Line">
   
     <link rel="alternative" href="/atom.xml" title="KEEP LEARNING" type="application/atom+xml">
   
@@ -154,31 +154,93 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-我的第一篇博客文章" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
+      Python学习笔记
     </h1>
   
 
         
-        <a href="/2019/04/21/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-04-21T04:35:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-21</time>
+        <a href="/2019/04/23/Python学习笔记/" class="archive-article-date">
+  	<time datetime="2019-04-23T11:22:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>内容</p>
+        <h2 id="第一章-基本功"><a href="#第一章-基本功" class="headerlink" title="第一章 基本功"></a>第一章 基本功</h2><p>1、raw字符串<br>   如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。<br>   为了避免这种情况，我们可以在字符串前面加个前缀 r ，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：r’\ (~<em>~)/ \ (~</em>~)/‘</p>
+<p>2、多行字符串<br>   如果要表示多行字符串，可以用’’’…’’’表示：<br>‘’’Line 1<br>Line 2<br>Line 3’’’<br>   与’Line 1\nLine 2\nLine 3’显示结果完全一样</p>
+<p>3、Unicode字符串<br>   如果要正常输出中文，需要在字符串前面加一个前缀 u ，例如：print u‘中文’<br>   并且需要在第一行添加注释# -<em>- coding: utf-8 -</em>-<br>*注：（1）Python对缩进要求严格，输入代码前面不能空格；<br>     （2）Python是一种动态语言，赋值无需定义变量类型；<br>     （3）以上三种字符串可以混合使用；<br>     （4）用‘#’符号注释语句。</p>
+<p>4、Python把0、空字符串’’和None看成 False，其他数值和非空字符串都看成 True。<br>and 和 or 运算的一条重要法则：短路计算。<br>（1）在计算 a and b 时，如果 a 是 False，则根据与运算法则，整个结果必定为 False，因此返回 a；如果 a 是 True，则整个计算结果必定取决与 b，因此返回 b。<br>（2）在计算 a or b 时，如果 a 是 True，则根据或运算法则，整个计算结果必定为 True，因此返回 a；如果 a 是 False，则整个计算结果必定取决于 b，因此返回 b。<br>例如：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>print ‘hello,’,’Python’ or ‘world’   # ==&gt; hello, python<br>print ‘hello,’,’’ and ‘world’        # ==&gt; hello, </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>5、Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。<br>*构造list：<br>直接用 [ ] 把list的所有元素都括起来，就是一个list对象。通常，我们会把list赋值给一个变量，这样，就可以通过变量来引用list。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Michael’, 100, True]     # 由于Python是动态语言，所以list中包含的元素并不要求都必须是同一种数据类型，完全可以在list中包含各种类型数据。<br>empty_l = []                   # 一个元素也没有的list，就是空list<br>print L                        # ==&gt; [‘Michael’, 100, True]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>*索引访问list：<br>索引从0开始。使用索引时，千万注意不要越界！</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>print L[0]    # ==&gt; Adam<br>print L[3]    # ==&gt; 越界<br>print L[-1]   # ==&gt; Bart (倒序访问，‘-1’表示倒数第一个)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>*添加新元素：<br>append()方法  一个参数，待添加元素内容。总是将新元素添加到list末尾。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>L.append(‘Paul’)<br>print L       # ==&gt; [‘Adam’, ‘Lisa’, ‘Bart’, ‘Paul’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>insert()方法  两个参数，第一个是需添加位置索引号，第二个是待添加元素内容。新元素插入此索引标识位置，原来此位置以及后面元素都自动向后移动一位。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>L.insert(0, ‘Paul’)<br>print L       # ==&gt; [‘Paul’, ‘Adam’, ‘Lisa’, ‘Bart’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>*从list删除元素：<br>pop()方法<br>不加参数，总是删除list的最后一个元素，并返回这个元素。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Adam’, ‘Lisa’, ‘Paul’, ‘Bart’]<br>print L.pop() # ==&gt; Bart<br>print L       # ==&gt; [‘Adam’, ‘Lisa’, ‘Paul’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>一个参数，待删除元素位置的索引号。删除后，被删除元素后面元素自动前移。</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Adam’, ‘Lisa’, ‘Paul’, ‘Bart’]<br>L.pop(2)<br>L.pop(2)<br>print L       # ==&gt; [‘Adam’, ‘Lisa’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>*替换元素：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>L[0],L[2] = L[2],L[0]  # ==&gt; 交换L[0],L[2]元素<br>print L                # ==&gt; [‘Bart’, ‘Lisa’, ‘Adam’]</p>
+</blockquote>
+</blockquote>
+</blockquote>
 
       
 
@@ -196,13 +258,13 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="img/WeChat Image_20190421161731.jpg">
+                      <img class="reward-img" src="http://kan.027cgb.com/620389/WeChat%20Image_20190421161731_WPS%E5%9B%BE%E7%89%87.jpg">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="img/WeChat Image_20190421162901.png">
+                      <img class="reward-img" src="http://kan.027cgb.com/620389/WeChat%20Image_20190421162901_WPS%E5%9B%BE%E7%89%87.png">
                       <span class="reward-type">微信</span>
                     </div>
                     
@@ -268,7 +330,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/21/我的第一篇博客文章/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/23/Python学习笔记/" alt="微信分享二维码">
     </div>
 </div>
 
