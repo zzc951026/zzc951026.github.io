@@ -239,6 +239,55 @@
 </blockquote>
 </blockquote>
 </blockquote>
+<p>6、tuple是另一种有序的列表，中文翻译为“ 元组 ”。<br>tuple 和 list 非常类似，但是，tuple一旦创建完毕，就不能修改了。<br>*创建多元素tuple：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>t = (0,1,2,3,4,5,6,7,8,9)<br>print t                # ==&gt; (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>创建tuple和创建list唯一不同之处是用( )替代了[ ]；<br>获取 tuple 元素的方式和 list 是一模一样的，可以正常使用 t[0]，t[-1]等索引方式访问元素，但是不能赋值成别的元素。<br>*创建单元素tuple：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>t = (1)<br>print t  # ==&gt; 1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>因为( )既可以表示tuple，又可以作为括号表示运算时的优先级，结果 (1) 被Python解释器计算出结果 1，导致我们得到的不是tuple，而是整数 1。</p>
+<p>正是因为用( )定义单元素的tuple有歧义，所以 Python 规定，单元素 tuple 要多加一个逗号“,”，这样就避免了歧义：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>t = (1,)<br>print t  # ==&gt; (1,) Python在打印单元素tuple时，也自动添加了一个“,”，为了更明确地告诉你这是一个tuple。</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>多元素 tuple 加不加这个额外的“,”效果是一样的：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>t = (1, 2, 3,)<br>print t  # ==&gt; (1, 2, 3)</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>t = ()<br>print t  # ==&gt; () 空tuple</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>***“可变”的tuple：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>t = (‘a’, ‘b’, [‘A’, ‘B’])<br>L = t[2]<br>L[0] = ‘X’<br>L[1] = ‘Y’<br>print t  # ==&gt; (‘a’, ‘b’, [‘X’, ‘Y’])</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>表面上，tuple是“可变”的了；<br>实际上，tuple内的元素并没有发生改变，而是tuple里list的元素改变。<br>tuple所谓的“不变”是说，tuple的每个元素，指向是永远不变！</p>
 
       
 
