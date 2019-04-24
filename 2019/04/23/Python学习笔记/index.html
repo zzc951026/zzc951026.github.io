@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="KEEP LEARNING">
 <meta property="og:description" content="第一章 基本功1、raw字符串   如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。   为了避免这种情况，我们可以在字符串前面加个前缀 r ，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：r’\ (~~)/ \ (~~)/‘ 2、多行字符串   如果要表示多行字符串，可以用’’’…’’’表示：‘’’Line 1Line 2Line 3’’’   与’Line">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2019-04-24T09:08:21.121Z">
+<meta property="og:updated_time" content="2019-04-24T16:13:47.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习笔记">
 <meta name="twitter:description" content="第一章 基本功1、raw字符串   如果一个字符串包含很多需要转义的字符，对每一个字符都进行转义会很麻烦。   为了避免这种情况，我们可以在字符串前面加个前缀 r ，表示这是一个 raw 字符串，里面的字符就不需要转义了。例如：r’\ (~~)/ \ (~~)/‘ 2、多行字符串   如果要表示多行字符串，可以用’’’…’’’表示：‘’’Line 1Line 2Line 3’’’   与’Line">
@@ -357,7 +357,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-04-24 17:08:21" itemprop="dateModified" datetime="2019-04-24T17:08:21+08:00">2019-04-24</time>
+                <time title="Modified: 2019-04-25 00:13:47" itemprop="dateModified" datetime="2019-04-25T00:13:47+08:00">2019-04-25</time>
               
             
           </span>
@@ -396,115 +396,59 @@
 <p>3、Unicode字符串<br>   如果要正常输出中文，需要在字符串前面加一个前缀 u ，例如：print u‘中文’<br>   并且需要在第一行添加注释# -<em>- coding: utf-8 -</em>-<br>*注：（1）Python对缩进要求严格，输入代码前面不能空格；<br>     （2）Python是一种动态语言，赋值无需定义变量类型；<br>     （3）以上三种字符串可以混合使用；<br>     （4）用‘#’符号注释语句。</p>
 <p>4、Python把0、空字符串’’和None看成 False，其他数值和非空字符串都看成 True。<br>and 和 or 运算的一条重要法则：短路计算。<br>（1）在计算 a and b 时，如果 a 是 False，则根据与运算法则，整个结果必定为 False，因此返回 a；如果 a 是 True，则整个计算结果必定取决与 b，因此返回 b。<br>（2）在计算 a or b 时，如果 a 是 True，则根据或运算法则，整个计算结果必定为 True，因此返回 a；如果 a 是 False，则整个计算结果必定取决于 b，因此返回 b。<br>例如：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>print ‘hello,’,’Python’ or ‘world’   # ==&gt; hello, python<br>print ‘hello,’,’’ and ‘world’        # ==&gt; hello, </p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>5、Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。<br>*构造list：<br>直接用 [ ] 把list的所有元素都括起来，就是一个list对象。通常，我们会把list赋值给一个变量，这样，就可以通过变量来引用list。</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Michael’, 100, True]     # 由于Python是动态语言，所以list中包含的元素并不要求都必须是同一种数据类型，完全可以在list中包含各种类型数据。<br>empty_l = []                   # 一个元素也没有的list，就是空list<br>print L                        # ==&gt; [‘Michael’, 100, True]</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>*索引访问list：<br>索引从0开始。使用索引时，千万注意不要越界！</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>print L[0]    # ==&gt; Adam<br>print L[3]    # ==&gt; 越界<br>print L[-1]   # ==&gt; Bart (倒序访问，‘-1’表示倒数第一个)</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>*添加新元素：<br>append()方法  一个参数，待添加元素内容。总是将新元素添加到list末尾。</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>L.append(‘Paul’)<br>print L       # ==&gt; [‘Adam’, ‘Lisa’, ‘Bart’, ‘Paul’]</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>insert()方法  两个参数，第一个是需添加位置索引号，第二个是待添加元素内容。新元素插入此索引标识位置，原来此位置以及后面元素都自动向后移动一位。</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>L.insert(0, ‘Paul’)<br>print L       # ==&gt; [‘Paul’, ‘Adam’, ‘Lisa’, ‘Bart’]</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>*从list删除元素：<br>pop()方法<br>不加参数，总是删除list的最后一个元素，并返回这个元素。</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Adam’, ‘Lisa’, ‘Paul’, ‘Bart’]<br>print L.pop() # ==&gt; Bart<br>print L       # ==&gt; [‘Adam’, ‘Lisa’, ‘Paul’]</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>一个参数，待删除元素位置的索引号。删除后，被删除元素后面元素自动前移。</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Adam’, ‘Lisa’, ‘Paul’, ‘Bart’]<br>L.pop(2)<br>L.pop(2)<br>print L       # ==&gt; [‘Adam’, ‘Lisa’]</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>*替换元素：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>L = [‘Adam’, ‘Lisa’, ‘Bart’]<br>L[0],L[2] = L[2],L[0]  # ==&gt; 交换L[0],L[2]元素<br>print L                # ==&gt; [‘Bart’, ‘Lisa’, ‘Adam’]</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>6、tuple是另一种有序的列表，中文翻译为“ 元组 ”。<br>tuple 和 list 非常类似，但是，tuple一旦创建完毕，就不能修改了。<br>*创建多元素tuple：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>t = (0,1,2,3,4,5,6,7,8,9)<br>print t                # ==&gt; (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>创建tuple和创建list唯一不同之处是用( )替代了[ ]；<br>获取 tuple 元素的方式和 list 是一模一样的，可以正常使用 t[0]，t[-1]等索引方式访问元素，但是不能赋值成别的元素。<br>*创建单元素tuple：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>t = (1)<br>print t  # ==&gt; 1</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>因为( )既可以表示tuple，又可以作为括号表示运算时的优先级，结果 (1) 被Python解释器计算出结果 1，导致我们得到的不是tuple，而是整数 1。</p>
 <p>正是因为用( )定义单元素的tuple有歧义，所以 Python 规定，单元素 tuple 要多加一个逗号“,”，这样就避免了歧义：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>t = (1,)<br>print t  # ==&gt; (1,) Python在打印单元素tuple时，也自动添加了一个“,”，为了更明确地告诉你这是一个tuple。</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>多元素 tuple 加不加这个额外的“,”效果是一样的：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>t = (1, 2, 3,)<br>print t  # ==&gt; (1, 2, 3)</p>
 </blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
 <blockquote>
 <p>t = ()<br>print t  # ==&gt; () 空tuple</p>
 </blockquote>
-</blockquote>
-</blockquote>
 <p>***“可变”的tuple：</p>
 <blockquote>
-<blockquote>
-<blockquote>
 <p>t = (‘a’, ‘b’, [‘A’, ‘B’])<br>L = t[2]<br>L[0] = ‘X’<br>L[1] = ‘Y’<br>print t  # ==&gt; (‘a’, ‘b’, [‘X’, ‘Y’])</p>
-</blockquote>
-</blockquote>
 </blockquote>
 <p>表面上，tuple是“可变”的了；<br>实际上，tuple内的元素并没有发生改变，而是tuple里list的元素改变。<br>tuple所谓的“不变”是说，tuple的每个元素，指向是永远不变！</p>
 
