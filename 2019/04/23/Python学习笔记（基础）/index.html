@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="KEEP LEARNING">
 <meta property="og:description" content="第一章 基本功1、变量名命名规则在Python程序中，变量名必须是大小写英文、数字和下划线（_）的组合，且不能用数字开头 2、print语句print语句可以向屏幕上输出指定的文字，也可以跟上多个字符串，用逗号“,”隔开。print会依次打印每个字符串，遇到逗号“,”会输出一个空格。print &amp;#39;100 + 200 =&amp;#39;, 100 + 200  # ==&amp;gt; 100 + 200">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-11T14:51:58.629Z">
+<meta property="og:updated_time" content="2019-05-12T10:09:35.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python学习笔记（基础）">
 <meta name="twitter:description" content="第一章 基本功1、变量名命名规则在Python程序中，变量名必须是大小写英文、数字和下划线（_）的组合，且不能用数字开头 2、print语句print语句可以向屏幕上输出指定的文字，也可以跟上多个字符串，用逗号“,”隔开。print会依次打印每个字符串，遇到逗号“,”会输出一个空格。print &amp;#39;100 + 200 =&amp;#39;, 100 + 200  # ==&amp;gt; 100 + 200">
@@ -375,7 +375,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-11 22:51:58" itemprop="dateModified" datetime="2019-05-11T22:51:58+08:00">2019-05-11</time>
+                <time title="Modified: 2019-05-12 18:09:35" itemprop="dateModified" datetime="2019-05-12T18:09:35+08:00">2019-05-12</time>
               
             
           </span>
@@ -416,7 +416,7 @@
 <p>与<br><code>&#39;Line 1\nLine 2\nLine 3&#39;</code><br>显示结果完全一样</p>
 <h3 id="5、Unicode字符串"><a href="#5、Unicode字符串" class="headerlink" title="5、Unicode字符串"></a>5、Unicode字符串</h3><p>如果要正常输出中文，需要在字符串前面加一个前缀 u ，例如：print u‘中文’<br>并且需要在第一行添加注释:<br><code># -*- coding: utf-8 -*-</code></p>
 <blockquote>
-<p>*注：<br>     （1）Python对缩进要求严格，输入代码前面不能空格；<br>     （2）Python是一种动态语言，赋值无需定义变量类型；<br>     （3）以上三种字符串可以混合使用；<br>     （4）用‘#’符号注释语句。</p>
+<p>*注：<br>     （1）Python对缩进要求严格，输入代码前面不能空格；<br>     （2）Python是一种动态语言，赋值无需定义变量类型；<br>     （3）以上三种字符串可以混合使用；<br>     （4）用‘#’符号注释语句；<br>     在Python3中，字符串统一为unicode，不需要加前缀 u，而以字节存储的str则必须加前缀 b。</p>
 </blockquote>
 <h3 id="6、布尔"><a href="#6、布尔" class="headerlink" title="6、布尔"></a>6、布尔</h3><p>Python把0、空字符串’’和None看成 False，其他数值和非空字符串都看成 True。<br>and 和 or 运算的一条重要法则：短路计算。<br>（1）在计算 a and b 时，如果 a 是 False，则根据与运算法则，整个结果必定为 False，因此返回 a；如果 a 是 True，则整个计算结果必定取决与 b，因此返回 b。<br>（2）在计算 a or b 时，如果 a 是 True，则根据或运算法则，整个计算结果必定为 True，因此返回 a；如果 a 是 False，则整个计算结果必定取决于 b，因此返回 b。<br>例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print &apos;hello,&apos;,&apos;Python&apos; or &apos;world&apos;   # ==&gt; hello, python</span><br><span class="line">print &apos;hello,&apos;,&apos;&apos; and &apos;world&apos;        # ==&gt; hello,</span><br></pre></td></tr></table></figure></p>
 <h3 id="7、list（列表）"><a href="#7、list（列表）" class="headerlink" title="7、list（列表）"></a>7、list（列表）</h3><p>Python内置的一种数据类型是列表：list。list是一种有序的集合，可以随时添加和删除其中的元素。<br>*构造list：<br>直接用 [ ] 把list的所有元素都括起来，就是一个list对象。通常，我们会把list赋值给一个变量，这样，就可以通过变量来引用list。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">L = [&apos;Michael&apos;, 100, True]     # 由于Python是动态语言，所以list中包含的元素并不要求都必须是同一种数据类型，完全可以在list中包含各种类型数据。</span><br><span class="line">empty_l = []                   # 一个元素也没有的list，就是空list</span><br><span class="line">print L                        # ==&gt; [&apos;Michael&apos;, 100, True]</span><br></pre></td></tr></table></figure></p>
@@ -708,7 +708,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
