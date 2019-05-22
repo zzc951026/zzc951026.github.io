@@ -1772,7 +1772,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff545d;
+  background: #14537f;
 }
 .feed-link,
 .chat {
@@ -2502,7 +2502,7 @@ embed {
 }
 @media screen and (min-width: 1200px) {
   body {
-    background: url("/images/background1.jpg");
+    background: url("/images/background3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
