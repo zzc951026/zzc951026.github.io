@@ -1260,14 +1260,14 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body p a {
-  color: #0593d3;
+  color: #428bca;
   border-bottom: none;
-  border-bottom: 1px solid #0593d3;
+  border-bottom: 1px solid #428bca;
 }
 .post-body p a:hover {
-  color: #fc6423;
+  color: #ff4777;
   border-bottom: none;
-  border-bottom: 1px solid #fc6423;
+  border-bottom: 1px solid #ff4777;
 }
 .posts-expand {
   padding-top: 40px;
@@ -1782,7 +1782,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #61f9d5;
+  background: #332b8a;
 }
 .feed-link,
 .chat {
