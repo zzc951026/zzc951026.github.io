@@ -1782,7 +1782,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4bd6e7;
+  background: #f7dd41;
 }
 .feed-link,
 .chat {
@@ -2527,4 +2527,5 @@ embed {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+  background: rgba(255,255,255,0.5);
 }
