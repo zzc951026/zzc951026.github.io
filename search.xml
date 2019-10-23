@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[简述BP（Backpropagation）算法]]></title>
+    <url>%2F2019%2F10%2F23%2F%E7%AE%80%E8%BF%B0BP%EF%BC%88Backpropagation%EF%BC%89%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Chain Rule BPBP基于Gradient Decent Forward pass Backward pass 假设上面两个“？”已知，可得下式： Summary]]></content>
+      <tags>
+        <tag>Learning</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[[转]人工智能教程]]></title>
     <url>%2F2019%2F05%2F26%2F%E8%BD%AC-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[人工智能教程 从机器学习谈起]]></content>
