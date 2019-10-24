@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[简述BP（Backpropagation）算法]]></title>
     <url>%2F2019%2F10%2F23%2F%E7%AE%80%E8%BF%B0BP%EF%BC%88Backpropagation%EF%BC%89%E7%AE%97%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[一、Chain Rule 二、BPBP基于Gradient Decent a、Forward pass b、Backward pass 假设上面两个“？”已知，可得下式： 三、Summary]]></content>
+    <content type="text"><![CDATA[一、Chain Rule 二、BPBP基于Gradient Decent （a）Forward pass （b）Backward pass 假设上面两个“？”已知，可得下式： 三、Summary]]></content>
       <tags>
         <tag>Learning</tag>
         <tag>AI</tag>
